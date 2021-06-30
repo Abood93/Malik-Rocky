@@ -1,0 +1,24 @@
+amount to withdraw from ATM = amountWithdraw
+amount in the account = amountAccount
+amount dispensed to the customer = amountDisp
+amount less than or equal to 300 = amountLessEq300
+amount to withdraw more than 300 = amountOver300
+total amount of money customer owes = debits
+shortage of the money that is not in account = amountShort
+
+
+if(amountWithdraw less than or equal 500)
+ -amountAccount sufficient:
+  >amountLessEq300: amountDisp
+  >amountOver300: amountDisp, debits = amountOver300 * 0.04
+
+-amountAccount insufficient:
+  >amountLessEq300: amountDisp, debits = amountShort + 25
+  >amountOver300: amountDisp, debits = (amountOver300 * 0.04) + amountShort + 25
+
+-amountAccount empty or negative:
+  >no amountDisp
+
+if(amountWithdraw more than 500, inform customer that amountWithdraw can't be more than 500)
+
+
