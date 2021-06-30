@@ -1,0 +1,11 @@
+list of students names = students
+test scores of the students = scores
+average test scores = avg
+
+
+
+-calculate avg
+-print students with scores less than avg
+-find highest score
+-print students with scores equal to highest test score
+
