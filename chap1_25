@@ -1,0 +1,62 @@
+#include<iostream>
+#include<string>
+#include<new>
+using namespace std;
+
+int main()
+{
+	int num; //number of students
+	string* students; //list of students names
+	float* scores; //list of students scores
+	float scoresSum = 0; //sum of the scores 
+	float avg; //average test scores
+	float highestScore = 0; //highest score
+
+	cout << "Enter number of students: ";
+	cin >> num;
+	students = new string[num]; //list of students names
+	cout << "Enter students names: ";
+	for (int i = 0; i < num; i++)
+		cin >> students[i];
+
+	scores = new float[num]; //list of students scores
+	cout << "Enter students scores: ";
+	for (int j = 0; j < num; j++)
+	{
+		cin >> scores[j];
+		scoresSum += scores[j]; //caculating sum of scores		
+	}
+
+	//getting the highest score
+	highestScore = scores[0];
+	for (int j = 0; j < num; j++)
+	{
+		if (scores[j] > highestScore)
+			highestScore = scores[j];
+	}
+	avg = scoresSum / num; //calculating average of scores
+	cout << "Students with scores less than AVG: ";
+	for (int k = 0; k < num; k++)
+	{
+		//printing students with scores less than avg
+		if (scores[k] < avg)
+		{
+			cout << students[k] << "  ";
+		}
+	}
+	cout << endl;
+	cout << "Students with highest score are: ";
+	for (int x = 0; x < num; x++)
+	{
+		//printing students with scores equal to highest score
+		if (scores[x] == highestScore)
+		{
+			cout<< students[x] << "  ";
+		}
+	}
+	//deallocate memory
+	delete[] scores;
+	delete[] students;
+
+	return 0;
+}
