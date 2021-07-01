@@ -39,6 +39,8 @@ int main()
 	avg = scoresSum / num; //calculating average of scores  //<---Watch for discussion of this in Stroustrop Ch 3
 			//Since num is an int, scoresSum will be changed to an int, and it will do integer division
 			// E.g., 5 / 2 gets 2, not 2.5 or 3.
+			/*This works, not because avg is float, but because scoresSum is float.  The mixed type computation causes num to be changed to float,
+			By the way, on lines 13 and 15, the initialization should be to 0.0, not 0 (but the compiler probably figured that out and used 0.0)*/
 	cout << "Students with scores less than AVG: ";
 	for (int k = 0; k < num; k++)
 	{
