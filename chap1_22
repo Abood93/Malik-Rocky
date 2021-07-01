@@ -7,7 +7,7 @@ int main()
 	double amountWithdraw; //amount to withdraw from ATM
 	double amountAccount; //amount in the account
 	double debits = 0; //total amount of debits
- 
+
 	cout << "Enter the amount to be withdrawn: ";
 	cin >> amountWithdraw;
 	cout << "Enter the amount you already have in the account: ";
@@ -21,14 +21,14 @@ int main()
 			{
 				cout << "amount dispensed: " << amountWithdraw << endl;
 			}
-				
-			else if (amountWithdraw > 300)
+
+			else if (amountWithdraw > 300) //<---If line 20 is false, then this is always true-don't need the if
 			{
 				debits = (amountWithdraw - 300) * 0.04;
 				cout << "amount dispensed: " << amountWithdraw << endl;
 				cout << "your debits are: " << debits << endl;
 			}
-			
+
 		}
 		else if (amountAccount < amountWithdraw && amountAccount>0)
 		{
@@ -50,7 +50,7 @@ int main()
 			cout << "No amount can be dispended." << endl;
 	}
 
-	else if (amountWithdraw > 500)
+	else if (amountWithdraw > 500) //<---If line 16 is false, this is true - if not needed
 		cout << "Amount can't be more than 500$." << endl;
 
 	return 0;
