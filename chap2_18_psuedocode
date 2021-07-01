@@ -1,0 +1,19 @@
+
+entered by user:
+pay rate per hour = payRate
+number of hours worked each week = numHours
+
+printed by program:
+income before taxes from summer job = incomeBT
+income after taxes from summer job = incomeAT
+money spent on clothes and other accessories = clothesAccess
+money spent on school supplies = schoolSupp
+money spent on savings bonds = savingBond
+money spent by your parents to buy additional savings bonds = savingBondAdd
+
+-incomeBT = payRate * numHours * 5
+-incomeAT = payRate * numHours * 5 * 0.86
+-clothesAccess = 0.10 * incomeAT
+-schoolSupp = 0.01 * incomeAT
+-savingBond = (incomeAT - (clothesAccess + schoolSupp)) * 0.25
+-savingBondAdd = savingBond / 2
