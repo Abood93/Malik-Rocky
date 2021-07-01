@@ -31,7 +31,7 @@ int main()
 
 	//getting the highest score
 	highestScore = scores[0];
-	for (int j = 0; j < num; j++)//<---You can start with j = 1 - scores[0] can't be higher than scores[0]
+	for (int j = 1; j < num; j++)//<---You can start with j = 1 - scores[0] can't be higher than scores[0]
 	{
 		if (scores[j] > highestScore)
 			highestScore = scores[j];
