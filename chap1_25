@@ -3,6 +3,8 @@
 #include<new>
 using namespace std;
 
+//See lines 34 and 39
+
 int main()
 {
 	int num; //number of students
@@ -29,12 +31,14 @@ int main()
 
 	//getting the highest score
 	highestScore = scores[0];
-	for (int j = 0; j < num; j++)
+	for (int j = 0; j < num; j++)//<---You can start with j = 1 - scores[0] can't be higher than scores[0]
 	{
 		if (scores[j] > highestScore)
 			highestScore = scores[j];
 	}
-	avg = scoresSum / num; //calculating average of scores
+	avg = scoresSum / num; //calculating average of scores  //<---Watch for discussion of this in Stroustrop Ch 3
+			//Since num is an int, scoresSum will be changed to an int, and it will do integer division
+			// E.g., 5 / 2 gets 2, not 2.5 or 3.
 	cout << "Students with scores less than AVG: ";
 	for (int k = 0; k < num; k++)
 	{
@@ -51,7 +55,7 @@ int main()
 		//printing students with scores equal to highest score
 		if (scores[x] == highestScore)
 		{
-			cout<< students[x] << "  ";
+			cout << students[x] << "  ";
 		}
 	}
 	//deallocate memory
