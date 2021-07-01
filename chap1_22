@@ -1,7 +1,7 @@
 #include<iostream>
 
 using namespace std;
-
+//See lines 25 and 53.  In U.S., we write $500, not 500$, even though we say 500 dollars.
 int main()
 {
 	double amountWithdraw; //amount to withdraw from ATM
