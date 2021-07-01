@@ -22,7 +22,7 @@ int main()
 				cout << "amount dispensed: " << amountWithdraw << endl;
 			}
 
-			else if (amountWithdraw > 300) //<---If line 20 is false, then this is always true-don't need the if
+			else //<---If line 20 is false, then this is always true-don't need the if
 			{
 				debits = (amountWithdraw - 300) * 0.04;
 				cout << "amount dispensed: " << amountWithdraw << endl;
@@ -50,8 +50,8 @@ int main()
 			cout << "No amount can be dispended." << endl;
 	}
 
-	else if (amountWithdraw > 500) //<---If line 16 is false, this is true - if not needed
-		cout << "Amount can't be more than 500$." << endl;
+	else //<---If line 16 is false, this is true - if not needed
+		cout << "Amount can't be more than $500." << endl;
 
 	return 0;
 }
