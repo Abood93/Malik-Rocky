@@ -1,0 +1,23 @@
+user enters operation as a string: ("+", "-", "*", "/", "++", "--", "+=n", "-=n", "*=n", "/=n", "==", "!=", ">", ">=", "<", "<=").
+
+user enters two double operands.
+
+if(operation is "+") output: operand1 + operand2
+if(operation is "-") output: operand1 - operand2
+if(operation is "*") output: operand1 * operand2
+if(operation is "/") output: operand1 / operand2
+
+if(operation is "++") output: operand1 + 1, operand2 + 1
+if(operation is "--") output: operand1 - 1, operand2 - 1
+
+if(operation is "+=n") enter value of n, output: operand1 + n, operand2 + n
+if(operation is "-=n") enter value of n, output: operand1 - n, operand2 - n
+if(operation is "*=n") enter value of n, output: operand1 * n, operand2 * n
+if(operation is "/=n") enter value of n, output: operand1 / n, operand2 / n
+
+if(operation is "==") checks if operand1 = operand2
+if(operation is "!=") checks if operand1 != operand2
+if(operation is ">") checks if operand1 > operand2
+if(operation is ">=") checks if operand1 >= operand2
+if(operation is "<") checks if operand1 < operand2
+if(operation is "<=") checks if operand1 <= operand2
