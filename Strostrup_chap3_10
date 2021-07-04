@@ -1,0 +1,97 @@
+#include "std_lib_facilities.h"
+
+int main()
+{
+	string operation = " ";
+	double operand1 = 0.0;
+	double operand2 = 0.0;
+	double n = 0.0;
+
+	cout << "Enter operation: ";
+	cin >> operation;
+	cout << "Enter two operands: ";
+	cin >> operand1 >> operand2;
+
+	if (operation == "+")
+		cout << operand1 << " + " << operand2 << " = " << operand1 + operand2;
+	else if (operation == "-")
+		cout << operand1 << " - " << operand2 << " = " << operand1 - operand2;
+	else if (operation == "*")
+		cout << operand1 << " * " << operand2 << " = " << operand1 * operand2;
+	else if (operation == "/")
+		cout << operand1 << " / " << operand2 << " = " << operand1 / operand2;
+
+	else if (operation == "++")
+		cout << operand1 << " + 1 = " << operand1 + 1 << ", " << operand2 << " + 1 = " << operand2 + 1;
+	else if (operation == "--")
+		cout << operand1 << " - 1 = " << operand1 - 1 << ", " << operand2 << " - 1 = " << operand2 - 1;
+
+	else if (operation == "+=n")
+	{
+		cout << "Enter the value of n: ";
+		cin >> n;
+		cout << operand1 << " + " << n <<" = "<<operand1 + n << ", " << operand2 << " + " << n << " = " << operand2 + n;
+	}
+	else if (operation == "-=n")
+	{
+		cout << "Enter the value of n: ";
+		cin >> n;
+		cout << operand1 << " - " << n << " = " << operand1 - n << ", " << operand2 << " - " << n << " = " << operand2 - n;
+	}
+	else if (operation == "*=n")
+	{
+		cout << "Enter the value of n: ";
+		cin >> n;
+		cout << operand1 << " * " << n << " = " << operand1 * n << ", " << operand2 << " * " << n << " = " << operand2 * n;
+	}
+	else if (operation == "/=n")
+	{
+		cout << "Enter the value of n: ";
+		cin >> n;
+		cout << operand1 << " / " << n << " = " << operand1 / n << ", " << operand2 << " / " << n << " = " << operand2 / n;
+	}
+
+	else if (operation == "==")
+	{
+		if (operand1 == operand2)
+			cout << "two operands are equal.";
+		else
+			cout << "two operands are not equal.";
+	}
+	else if (operation == "!=")
+	{
+		if (operand1 != operand2)
+			cout << "two operands are not equal.";
+		else
+			cout << "two operands are equal.";
+	}
+	else if (operation == ">")
+	{
+		if (operand1 > operand2)
+			cout << "first operand is greater than the second.";
+		else
+			cout << "first operand is not greater than the second.";
+	}
+	else if (operation == ">=")
+	{
+		if (operand1 >= operand2)
+			cout << "first operand is greater than or equal the second.";
+		else
+			cout << "first operand is not greater than or equals than the second.";
+	}
+	else if (operation == "<")
+	{
+		if (operand1 < operand2)
+			cout << "first operand is less than the second.";
+		else
+			cout << "first operand is not less than the second.";
+	}
+	else if (operation == "<=")
+	{
+		if (operand1 <= operand2)
+			cout << "first operand is less than or equal the second.";
+		else
+			cout << "first operand is not less than or equal the second.";
+	}
+
+}
