@@ -1,0 +1,36 @@
+#include"std_lib_facilities.h"
+
+int main()
+{
+	vector<int> composite; //for storing composite numbers
+	int square = 0; //for storing squares of numbers
+	int multiple = 0; //for storing multiples of numbers starting with square
+
+	//looping through numbers 2 - 100
+	for (int i = 2; i <= 100; ++i)
+	{
+		square = i * i; //square of i
+		multiple = square + i; //multiple of i starting with square
+		if (square <= 100) //making sure that square is less than or equal to 100
+		{
+			composite.push_back(square); //adding squares of numbers to the vector composite
+			while (multiple <= 100) //making sure that multiple is less than or equal 100
+			{
+				composite.push_back(multiple); //adding multiples to the vector composite
+				multiple = multiple + i; //incrementing the value of multiple by i
+			}
+		}
+	}
+
+	for (int i = 2; i <= 100; i++)
+	{
+		//checking the vector composite from start to end for the value of i
+		//if not found continue
+		if (find(composite.begin(), composite.end(), i) != composite.end())
+			continue;
+		//else printing the values of i, which are the primes
+		else
+			cout << i << "  ";
+		
+	}
+}
