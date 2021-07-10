@@ -1,0 +1,16 @@
+
+Numbers in the range 1 - 100 are: either prime or composite
+prime: divisible only by itself and 1, number 1 isn't a prime
+composite: otherwise
+
+"Sieve of Eratosthenes" method:
+- numbers 2 - 100 are all unmarked, ordered in rows, ten numbers in each row.
+- first unmarked number = 2 is a prime, but 2² = 4 and its multiples 6, 8, 10,... are composite.
+- second unmarked number = 3 is a prime, but 3² = 9 and its multiples 12, 15, 18,... are composite.
+- third unmarked number = 5 is a prime, but 5² = 25 and its multiples 30, 35, 40,... are composite.
+- fourth unmarked number = 7 is a prime, but 7² = 49 and its multiples 56, 63, 70,... are composite.
+- next unmarked number = 11 is a prime, but 11² = 121 which is greater than 100, so the rest of unmarked numbers are all primes.
+
+objective: printing all prime numbers in the range 1 - 100 using the previous method.
+
+ 
