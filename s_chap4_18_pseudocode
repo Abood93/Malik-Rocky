@@ -1,0 +1,9 @@
+quadratic equation: ax² + bx + c = 0
+solution: x = (-b + sqrtf(b² - 4ac))/2a  or  (-b - sqrtf(b² - 4ac))/2a
+user inputs: a, b, and c
+output: x1 and x2
+
+we first have to calculate the Discriminant = b² - 4ac
+if discriminant > 0   -> there is two soultions x1, and x2
+if discriminant = 0   -> there is one solution x1
+if discriminant < 0   -> there is no solution to the equation
