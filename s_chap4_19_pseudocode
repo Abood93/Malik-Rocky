@@ -1,0 +1,10 @@
+user enters set of names and set of values in pairs
+
+for each pair add name to a vector called names, and add number to a vector called scores in corresponding position
+
+the program is terminated with the input NoName 0
+
+the program will print an error message if a name is entered twice
+
+the program will then output (name,score) pairs, one per line
+
