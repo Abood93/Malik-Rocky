@@ -16,6 +16,10 @@ int main()
 			scores.push_back(score);
 			if (count!=0 && names[count] == names[count - 1])
 			{
+			/*  This checks if the same name is entered twice in a row.  The problem requires you to check if it's entered twice.
+			*   (They want you to have to deal with the fact that the vector size is changing.)
+			*   Also, this error condition is supposed to terminate the program, not just end data collection
+			*/
 				cout << "Error, same name can't be entered twice." << endl;
 				break;
 			}
