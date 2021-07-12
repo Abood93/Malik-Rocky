@@ -2,6 +2,7 @@
 /*  Please move std_lib_facilities.h up a level so that #include "..\std_lib_facilities.h" works.
 *   The code looks very clean and is easy to follow.
 *   You forgot to handle the case where the user enters zero for a.
+*   You have warnings that should be fixed.
 */
 int main()
 {
